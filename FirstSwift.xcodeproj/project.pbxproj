@@ -14,6 +14,7 @@
 		C886E1761959C83200ED5201 /* FirstSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C886E1751959C83200ED5201 /* FirstSwiftTests.swift */; };
 		C886E1801959C8D500ED5201 /* DrawingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C886E17F1959C8D500ED5201 /* DrawingView.swift */; };
 		C886E1821959CDCF00ED5201 /* AnimationLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C886E1811959CDCF00ED5201 /* AnimationLayer.swift */; };
+		C886E1851959F1CC00ED5201 /* Ball.swift in Sources */ = {isa = PBXBuildFile; fileRef = C886E1841959F1CC00ED5201 /* Ball.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		C886E1751959C83200ED5201 /* FirstSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstSwiftTests.swift; sourceTree = "<group>"; };
 		C886E17F1959C8D500ED5201 /* DrawingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawingView.swift; sourceTree = "<group>"; };
 		C886E1811959CDCF00ED5201 /* AnimationLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationLayer.swift; sourceTree = "<group>"; };
+		C886E1841959F1CC00ED5201 /* Ball.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ball.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				C886E1641959C83200ED5201 /* ViewController.swift */,
 				C886E17F1959C8D500ED5201 /* DrawingView.swift */,
 				C886E1811959CDCF00ED5201 /* AnimationLayer.swift */,
+				C886E1841959F1CC00ED5201 /* Ball.swift */,
 				C886E1661959C83200ED5201 /* Main.storyboard */,
 				C886E1691959C83200ED5201 /* Images.xcassets */,
 				C886E1601959C83200ED5201 /* Supporting Files */,
@@ -216,6 +219,7 @@
 			files = (
 				C886E1821959CDCF00ED5201 /* AnimationLayer.swift in Sources */,
 				C886E1801959C8D500ED5201 /* DrawingView.swift in Sources */,
+				C886E1851959F1CC00ED5201 /* Ball.swift in Sources */,
 				C886E1651959C83200ED5201 /* ViewController.swift in Sources */,
 				C886E1631959C83200ED5201 /* AppDelegate.swift in Sources */,
 			);
