@@ -12,6 +12,12 @@ import UIKit
 class DrawingView: UIView {
     
     ////////////////////////////////////////////////////////////////////////////////
+    // MARK: Properties
+
+    var animationLayer: AnimationLayer = AnimationLayer()
+    
+    
+    ////////////////////////////////////////////////////////////////////////////////
     // MARK: Initialization
     
     init(frame: CGRect) {
@@ -29,11 +35,31 @@ class DrawingView: UIView {
     }
     
     func setupAnimationLayer() {
-        let animationLayer = AnimationLayer()
-        animationLayer.bounds = CGRect(x: 0.0, y: 0.0, width: self.frame.size.width, height: self.frame.size.height)
-        animationLayer.anchorPoint = CGPointZero
+        self.animationLayer.bounds = CGRect(x: 0.0, y: 0.0, width: self.frame.size.width, height: self.frame.size.height)
+        self.animationLayer.anchorPoint = CGPointZero
         
         self.layer.addSublayer(animationLayer)
+    }
+    
+}
+
+extension DrawingView {
+    override func touchesBegan(touches: NSSet!, withEvent event: UIEvent!) {
+        let touch = touches.anyObject() as UITouch
+        self.animationLayer.currentTouchPoint = touch.locationInView(self)
+    }
+    
+    override func touchesMoved(touches: NSSet!, withEvent event: UIEvent!)  {
+        let touch = touches.anyObject() as UITouch
+        self.animationLayer.currentTouchPoint = touch.locationInView(self)
+    }
+    
+    override func touchesCancelled(touches: NSSet!, withEvent event: UIEvent!) {
+
+    }
+    
+    override func touchesEnded(touches: NSSet!, withEvent event: UIEvent!)  {
+        
     }
     
 }

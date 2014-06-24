@@ -11,10 +11,11 @@ import UIKit
 import QuartzCore
 
 class AnimationLayer: CALayer {
+    
     ////////////////////////////////////////////////////////////////////////////////
     // MARK: Properties
     
-    var lastPoint = CGPointZero
+    var currentTouchPoint = CGPointZero
     var aBall = Ball.init(aRadius: 10.0)
     
     
@@ -62,10 +63,12 @@ class AnimationLayer: CALayer {
     
     func update() {
         let point = CGPoint(x: 0, y: 0)
+        
         let date = NSDate()
+        
         aBall.update(date, touchPoint: point, bounds: self.bounds)
         
-        println("\(__FUNCTION__) x: \(lastPoint.x), x: \(lastPoint.y)")
+        println("\(__FUNCTION__) date: \(date)")
     }
     
     func draw(context: CGContext) {
@@ -75,7 +78,7 @@ class AnimationLayer: CALayer {
         CGContextSetFillColorWithColor(context, UIColor.redColor().CGColor)
         
         CGContextMoveToPoint(context, 0, 0);
-        CGContextAddLineToPoint(context, lastPoint.x, lastPoint.y);
+        CGContextAddLineToPoint(context, currentTouchPoint.x, currentTouchPoint.y);
         CGContextStrokePath(context);
         
         aBall.draw(context)
