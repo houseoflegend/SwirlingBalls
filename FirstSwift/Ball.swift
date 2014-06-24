@@ -21,12 +21,14 @@ class Ball {
     var color: UIColor = UIColor.whiteColor()
     var fastness: CGFloat = 10.0
 
+    
     ////////////////////////////////////////////////////////////////////////////////
     // MARK: Initialization
     
     init(aRadius: CGFloat) {
         radius = aRadius
     }
+    
     
     ////////////////////////////////////////////////////////////////////////////////
     // MARK: Instance methods
