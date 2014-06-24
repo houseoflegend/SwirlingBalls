@@ -15,8 +15,9 @@ class AnimationLayer: CALayer {
     ////////////////////////////////////////////////////////////////////////////////
     // MARK: Properties
     
-    var currentTouchPoint = CGPointZero
-    var aBall = Ball.init(aRadius: 10.0)
+    var currentTouchPoint: CGPoint = CGPointZero
+    var previousDate = NSDate()
+    var balls: Ball[] = []
     
     
     ////////////////////////////////////////////////////////////////////////////////
@@ -58,17 +59,31 @@ class AnimationLayer: CALayer {
     // MARK: setup/update/draw methods
     
     func setup() {
+        var centerPointOfLayer = CGPoint(x: self.bounds.size.width, y: self.bounds.size.height)
+        self.currentTouchPoint = centerPointOfLayer
         
+        for i in 0..BALL_COUNT {
+            let randomRadius = CGFloat(MIN_BALL_RADIUS + Double(drand48()) * (MAX_BALL_RADIUS - MIN_BALL_RADIUS))
+            let ball = Ball(aCenter: centerPointOfLayer, aRadius: randomRadius)
+            balls.append(ball)
+        }
     }
     
     func update() {
-        let point = CGPoint(x: 0, y: 0)
+        var newDate = NSDate()
+        var tickTimeInterval = newDate.timeIntervalSinceDate(previousDate)
+        previousDate = newDate
         
-        let date = NSDate()
-        
-        aBall.update(date, touchPoint: point, bounds: self.bounds)
-        
-        println("\(__FUNCTION__) date: \(date)")
+        for i in 0..BALL_COUNT {
+            let ball = balls[Int(i)]
+            
+            var boundedTouchPointX = CGFloat(min(max(MAX_BALL_RADIUS + 1, Double(self.currentTouchPoint.x)), Double(self.bounds.size.width) - MAX_BALL_RADIUS - 1))
+            var boundedTouchPointY = CGFloat(min(max(MAX_BALL_RADIUS + 1, Double(self.currentTouchPoint.y)), Double(self.bounds.size.height) - MAX_BALL_RADIUS - 1))
+            
+            var boundedTouchPoint = CGPoint(x: boundedTouchPointX, y: boundedTouchPointY)
+            
+            ball.update(tickTimeInterval, touchPoint: boundedTouchPoint, bounds: self.bounds)
+        }
     }
     
     func draw(context: CGContext) {
@@ -81,11 +96,15 @@ class AnimationLayer: CALayer {
         CGContextAddLineToPoint(context, currentTouchPoint.x, currentTouchPoint.y);
         CGContextStrokePath(context);
         
-        aBall.draw(context)
+        for i in 0..BALL_COUNT {
+            let ball = balls[Int(i)]
+            ball.draw(context)
+        }
     }
     
     func drawBackground(context: CGContext) {
-        CGContextSetFillColorWithColor(context, UIColor.darkGrayColor().CGColor)
+        let backgroundColor = UIColor(white:0.1, alpha: 1.0)
+        CGContextSetFillColorWithColor(context, backgroundColor.CGColor)
         CGContextFillRect(context, CGRect(x: 0, y: 0, width: self.frame.size.width, height: self.frame.size.height))
     }
     

@@ -15,6 +15,7 @@
 		C886E1801959C8D500ED5201 /* DrawingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C886E17F1959C8D500ED5201 /* DrawingView.swift */; };
 		C886E1821959CDCF00ED5201 /* AnimationLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C886E1811959CDCF00ED5201 /* AnimationLayer.swift */; };
 		C886E1851959F1CC00ED5201 /* Ball.swift in Sources */ = {isa = PBXBuildFile; fileRef = C886E1841959F1CC00ED5201 /* Ball.swift */; };
+		C886E1871959FE2C00ED5201 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C886E1861959FE2C00ED5201 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		C886E17F1959C8D500ED5201 /* DrawingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawingView.swift; sourceTree = "<group>"; };
 		C886E1811959CDCF00ED5201 /* AnimationLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationLayer.swift; sourceTree = "<group>"; };
 		C886E1841959F1CC00ED5201 /* Ball.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ball.swift; sourceTree = "<group>"; };
+		C886E1861959FE2C00ED5201 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 				C886E17F1959C8D500ED5201 /* DrawingView.swift */,
 				C886E1811959CDCF00ED5201 /* AnimationLayer.swift */,
 				C886E1841959F1CC00ED5201 /* Ball.swift */,
+				C886E1861959FE2C00ED5201 /* Constants.swift */,
 				C886E1661959C83200ED5201 /* Main.storyboard */,
 				C886E1691959C83200ED5201 /* Images.xcassets */,
 				C886E1601959C83200ED5201 /* Supporting Files */,
@@ -218,6 +221,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C886E1821959CDCF00ED5201 /* AnimationLayer.swift in Sources */,
+				C886E1871959FE2C00ED5201 /* Constants.swift in Sources */,
 				C886E1801959C8D500ED5201 /* DrawingView.swift in Sources */,
 				C886E1851959F1CC00ED5201 /* Ball.swift in Sources */,
 				C886E1651959C83200ED5201 /* ViewController.swift in Sources */,
@@ -289,7 +293,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				METAL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -326,7 +330,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				METAL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -343,6 +347,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -355,6 +360,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -413,6 +419,7 @@
 				C886E17B1959C83200ED5201 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C886E17C1959C83200ED5201 /* Build configuration list for PBXNativeTarget "FirstSwiftTests" */ = {
 			isa = XCConfigurationList;
@@ -421,6 +428,7 @@
 				C886E17E1959C83200ED5201 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

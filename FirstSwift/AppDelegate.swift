@@ -15,7 +15,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: NSDictionary?) -> Bool {
-        // Override point for customization after application launch.
+        seedRandomNumberGenerator()
+        
         return true
     }
 
@@ -41,6 +42,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
     
-
+    func seedRandomNumberGenerator() {
+        var date = NSDate()
+        var seedValue = date.timeIntervalSince1970
+        srand48(CLong(seedValue))
+    }
+    
 }
 
