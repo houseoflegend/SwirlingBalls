@@ -9,17 +9,26 @@
 import UIKit
 
 class ViewController: UIViewController {
-                            
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    
+    ////////////////////////////////////////////////////////////////////////////////
+    // MARK: Initialization
+
+    override func awakeFromNib() {
+        setup()
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    
+    ////////////////////////////////////////////////////////////////////////////////
+    // MARK: Setup
+    
+    func setup() {
+        setupMainDrawingView()
     }
-
-
+    
+    func setupMainDrawingView() {
+        let drawingView = DrawingView(frame: CGRect(x: 0.0, y: 0.0, width: self.view.frame.size.width, height: self.view.frame.size.height))
+        self.view.addSubview(drawingView)
+    }
+    
 }
 

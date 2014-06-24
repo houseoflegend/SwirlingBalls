@@ -12,6 +12,8 @@
 		C886E1681959C83200ED5201 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C886E1661959C83200ED5201 /* Main.storyboard */; };
 		C886E16A1959C83200ED5201 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C886E1691959C83200ED5201 /* Images.xcassets */; };
 		C886E1761959C83200ED5201 /* FirstSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C886E1751959C83200ED5201 /* FirstSwiftTests.swift */; };
+		C886E1801959C8D500ED5201 /* DrawingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C886E17F1959C8D500ED5201 /* DrawingView.swift */; };
+		C886E1821959CDCF00ED5201 /* AnimationLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C886E1811959CDCF00ED5201 /* AnimationLayer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,8 @@
 		C886E16F1959C83200ED5201 /* FirstSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FirstSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C886E1741959C83200ED5201 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C886E1751959C83200ED5201 /* FirstSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstSwiftTests.swift; sourceTree = "<group>"; };
+		C886E17F1959C8D500ED5201 /* DrawingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawingView.swift; sourceTree = "<group>"; };
+		C886E1811959CDCF00ED5201 /* AnimationLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationLayer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +81,8 @@
 			children = (
 				C886E1621959C83200ED5201 /* AppDelegate.swift */,
 				C886E1641959C83200ED5201 /* ViewController.swift */,
+				C886E17F1959C8D500ED5201 /* DrawingView.swift */,
+				C886E1811959CDCF00ED5201 /* AnimationLayer.swift */,
 				C886E1661959C83200ED5201 /* Main.storyboard */,
 				C886E1691959C83200ED5201 /* Images.xcassets */,
 				C886E1601959C83200ED5201 /* Supporting Files */,
@@ -208,6 +214,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C886E1821959CDCF00ED5201 /* AnimationLayer.swift in Sources */,
+				C886E1801959C8D500ED5201 /* DrawingView.swift in Sources */,
 				C886E1651959C83200ED5201 /* ViewController.swift in Sources */,
 				C886E1631959C83200ED5201 /* AppDelegate.swift in Sources */,
 			);
@@ -328,6 +336,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = FirstSwift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -339,6 +348,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = FirstSwift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
