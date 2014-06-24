@@ -32,7 +32,6 @@ class Ball {
     // MARK: Instance methods
     
     func update(tickTime: NSDate, touchPoint: CGPoint, bounds: CGRect) {
-        
         center.x = center.x + 1
         center.y = center.y + 1
         if center.x > bounds.size.width {
