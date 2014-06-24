@@ -29,7 +29,7 @@ class Ball {
         center = aCenter
         radius = aRadius
         color = UIColor.whiteColor()
-        fastness = drand48() * 0.8 + 0.2; // Random number between 0.2 and 1.0
+        fastness = drand48() * MAX_FASTNESS + MIN_FASTNESS;
     }
     
 
@@ -69,7 +69,7 @@ class Ball {
     
     func draw(context: CGContext) {
         var totalVelocityMagnitude: Double = pow(pow(self.velocityX, 2) + pow(self.velocityY, 2), 0.5)
-        var scaledAlpha: Double = totalVelocityMagnitude / Double(10000.0)
+        var scaledAlpha: Double = totalVelocityMagnitude / Double(ALPHA_SCALING_DIVISOR)
         var alpha: CGFloat = min(1.0, CGFloat(scaledAlpha))
         self.color = UIColor(white: 1.0, alpha: alpha)
 
