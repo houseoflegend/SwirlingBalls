@@ -77,10 +77,10 @@ class AnimationLayer: CALayer {
         for i in 0..BALL_COUNT {
             let ball = balls[Int(i)]
             
-            var boundedTouchPointX = CGFloat(min(max(MAX_BALL_RADIUS + 1, Double(self.currentTouchPoint.x)), Double(self.bounds.size.width) - MAX_BALL_RADIUS - 1))
-            var boundedTouchPointY = CGFloat(min(max(MAX_BALL_RADIUS + 1, Double(self.currentTouchPoint.y)), Double(self.bounds.size.height) - MAX_BALL_RADIUS - 1))
+            var constrainedTouchPointX = CGFloat(min(max(MAX_BALL_RADIUS + 1, Double(self.currentTouchPoint.x)), Double(self.bounds.size.width) - MAX_BALL_RADIUS - 1))
+            var constraintedTouchPointY = CGFloat(min(max(MAX_BALL_RADIUS + 1, Double(self.currentTouchPoint.y)), Double(self.bounds.size.height) - MAX_BALL_RADIUS - 1))
             
-            var boundedTouchPoint = CGPoint(x: boundedTouchPointX, y: boundedTouchPointY)
+            var boundedTouchPoint = CGPoint(x: constrainedTouchPointX, y: constraintedTouchPointY)
             
             ball.update(tickTimeInterval, touchPoint: boundedTouchPoint, bounds: self.bounds)
         }
