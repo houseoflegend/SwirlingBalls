@@ -88,14 +88,7 @@ class AnimationLayer: CALayer {
     
     func draw(context: CGContext) {
         drawBackground(context)
-        
-        CGContextSetStrokeColorWithColor(context, UIColor.blackColor().CGColor)
-        CGContextSetFillColorWithColor(context, UIColor.redColor().CGColor)
-        
-        CGContextMoveToPoint(context, 0, 0);
-        CGContextAddLineToPoint(context, currentTouchPoint.x, currentTouchPoint.y);
-        CGContextStrokePath(context);
-        
+                
         for i in 0..BALL_COUNT {
             let ball = balls[Int(i)]
             ball.draw(context)
