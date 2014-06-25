@@ -16,10 +16,10 @@ class Ball {
 
     var radius: CGFloat
     var center: CGPoint = CGPointZero
-    var velocityX: Double = 0.0
-    var velocityY: Double = 0.0
+    var velocityX: CGFloat = 0.0
+    var velocityY: CGFloat = 0.0
     var color: UIColor
-    var fastness: Double
+    var fastness: CGFloat
 
     
     ////////////////////////////////////////////////////////////////////////////////
@@ -29,7 +29,7 @@ class Ball {
         center = aCenter
         radius = aRadius
         color = UIColor.whiteColor()
-        fastness = drand48() * MAX_FASTNESS + MIN_FASTNESS;
+        fastness = CGFloat(drand48()) * MAX_FASTNESS + MIN_FASTNESS;
     }
     
 
@@ -38,37 +38,37 @@ class Ball {
     
     func update(tickTimeInterval: NSTimeInterval, touchPoint: CGPoint, bounds: CGRect) {
         // Move ball.
-        var x: Double = Double(center.x) + self.velocityX * Double(tickTimeInterval)
-        var y: Double = Double(center.y) + self.velocityY * Double(tickTimeInterval)
+        var x: CGFloat = self.center.x + self.velocityX * CGFloat(tickTimeInterval)
+        var y: CGFloat = self.center.y + self.velocityY * CGFloat(tickTimeInterval)
         center.x = CGFloat(x)
         center.y = CGFloat(y)
         
         // Apply ATTRACTION to mouse cursor.
-        let velocityDeltaX: Double = (Double(touchPoint.x) - Double(center.x)) * Double(ATTRACTION) * Double(pow( MAX_BALL_RADIUS / Double(self.radius), 1.1)) * Double(self.fastness)
+        let velocityDeltaX: CGFloat = (touchPoint.x - self.center.x) * CGFloat(ATTRACTION) * CGFloat( pow( CDouble(MAX_BALL_RADIUS / self.radius), 1.1) ) * CGFloat(self.fastness)
         self.velocityX = self.velocityX + velocityDeltaX
         
-        let velocityDeltaY: Double = (Double(touchPoint.y) - Double(center.y)) * Double(ATTRACTION) * Double(pow( MAX_BALL_RADIUS / Double(self.radius), 1.1)) * Double(self.fastness)
+        let velocityDeltaY: CGFloat = (touchPoint.y - self.center.y) * CGFloat(ATTRACTION) * CGFloat( pow( CDouble(MAX_BALL_RADIUS / self.radius), 1.1) ) * CGFloat(self.fastness)
         self.velocityY = self.velocityY + velocityDeltaY
         
         // Apply damping.
-        self.velocityX *= DAMPING
-        self.velocityY *= DAMPING
+        self.velocityX *= CGFloat(DAMPING)
+        self.velocityY *= CGFloat(DAMPING)
 
         // Apply wall bounce
         if (center.x <= self.radius || center.x >= bounds.size.width - self.radius) {
-            center.x = max(center.x, self.radius + 1);
-            center.x = min(center.x, bounds.size.width - self.radius - 1);
-            self.velocityX = -self.velocityX * BOUNCE_DAMPING;
+            center.x = max(center.x, self.radius + 1)
+            center.x = min(center.x, bounds.size.width - self.radius - 1)
+            self.velocityX = -self.velocityX * CGFloat(BOUNCE_DAMPING)
         }
         if (center.y <= 0.0 + self.radius || center.y >= bounds.size.height - self.radius) {
-            center.y = max(center.y + 1, self.radius + 1);
-            center.y = min(center.y - 1, bounds.size.height - self.radius - 1);
-            self.velocityY = -self.velocityY * BOUNCE_DAMPING;
+            center.y = max(center.y + 1, self.radius + 1)
+            center.y = min(center.y - 1, bounds.size.height - self.radius - 1)
+            self.velocityY = -self.velocityY * CGFloat(BOUNCE_DAMPING)
         }
     }
     
     func draw(context: CGContext) {
-        var totalVelocityMagnitude: Double = pow(pow(self.velocityX, 2) + pow(self.velocityY, 2), 0.5)
+        var totalVelocityMagnitude: Double = pow(pow(CDouble(self.velocityX), 2) + pow(CDouble(self.velocityY), 2), 0.5)
         var scaledAlpha: Double = totalVelocityMagnitude / Double(ALPHA_SCALING_DIVISOR)
         var alpha: CGFloat = min(1.0, CGFloat(scaledAlpha))
         self.color = UIColor(white: 1.0, alpha: alpha)
