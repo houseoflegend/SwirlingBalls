@@ -88,7 +88,7 @@ class AnimationLayer: CALayer {
     
     func draw(context: CGContext) {
         drawBackground(context)
-                
+        
         for i in 0..BALL_COUNT {
             let ball = balls[Int(i)]
             ball.draw(context)
