@@ -1,6 +1,6 @@
 //
-//  FirstSwiftTests.swift
-//  FirstSwiftTests
+//  SwirlingBallsTests.swift
+//  SwirlingBallsTests
 //
 //  Created by Larry Legend on 6/24/14.
 //  Copyright (c) 2014 House of Legend. All rights reserved.
@@ -8,7 +8,7 @@
 
 import XCTest
 
-class FirstSwiftTests: XCTestCase {
+class SwirlingBallsTests: XCTestCase {
     
     override func setUp() {
         super.setUp()

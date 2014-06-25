@@ -1,6 +1,6 @@
 //
 //  Ball.swift
-//  FirstSwift
+//  SwirlingBalls
 //
 //  Created by Larry Legend on 6/24/14.
 //  Copyright (c) 2014 House of Legend. All rights reserved.

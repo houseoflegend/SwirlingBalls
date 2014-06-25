@@ -11,7 +11,7 @@
 		C886E1651959C83200ED5201 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C886E1641959C83200ED5201 /* ViewController.swift */; };
 		C886E1681959C83200ED5201 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C886E1661959C83200ED5201 /* Main.storyboard */; };
 		C886E16A1959C83200ED5201 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C886E1691959C83200ED5201 /* Images.xcassets */; };
-		C886E1761959C83200ED5201 /* FirstSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C886E1751959C83200ED5201 /* FirstSwiftTests.swift */; };
+		C886E1761959C83200ED5201 /* SwirlingBalls.swift in Sources */ = {isa = PBXBuildFile; fileRef = C886E1751959C83200ED5201 /* SwirlingBalls.swift */; };
 		C886E1801959C8D500ED5201 /* DrawingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C886E17F1959C8D500ED5201 /* DrawingView.swift */; };
 		C886E1821959CDCF00ED5201 /* AnimationLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C886E1811959CDCF00ED5201 /* AnimationLayer.swift */; };
 		C886E1851959F1CC00ED5201 /* Ball.swift in Sources */ = {isa = PBXBuildFile; fileRef = C886E1841959F1CC00ED5201 /* Ball.swift */; };
@@ -29,15 +29,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		C886E15D1959C83100ED5201 /* FirstSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirstSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C886E15D1959C83100ED5201 /* SwirlingBalls.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwirlingBalls.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C886E1611959C83200ED5201 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C886E1621959C83200ED5201 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C886E1641959C83200ED5201 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C886E1671959C83200ED5201 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C886E1691959C83200ED5201 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		C886E16F1959C83200ED5201 /* FirstSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FirstSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C886E16F1959C83200ED5201 /* SwirlingBallsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwirlingBallsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C886E1741959C83200ED5201 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C886E1751959C83200ED5201 /* FirstSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstSwiftTests.swift; sourceTree = "<group>"; };
+		C886E1751959C83200ED5201 /* SwirlingBalls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwirlingBalls.swift; sourceTree = "<group>"; };
 		C886E17F1959C8D500ED5201 /* DrawingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawingView.swift; sourceTree = "<group>"; };
 		C886E1811959CDCF00ED5201 /* AnimationLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationLayer.swift; sourceTree = "<group>"; };
 		C886E1841959F1CC00ED5201 /* Ball.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ball.swift; sourceTree = "<group>"; };
@@ -65,8 +65,8 @@
 		C886E1541959C83100ED5201 = {
 			isa = PBXGroup;
 			children = (
-				C886E15F1959C83100ED5201 /* FirstSwift */,
-				C886E1721959C83200ED5201 /* FirstSwiftTests */,
+				C886E15F1959C83100ED5201 /* SwirlingBalls */,
+				C886E1721959C83200ED5201 /* SwirlingBallsTests */,
 				C886E15E1959C83100ED5201 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -74,13 +74,13 @@
 		C886E15E1959C83100ED5201 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C886E15D1959C83100ED5201 /* FirstSwift.app */,
-				C886E16F1959C83200ED5201 /* FirstSwiftTests.xctest */,
+				C886E15D1959C83100ED5201 /* SwirlingBalls.app */,
+				C886E16F1959C83200ED5201 /* SwirlingBallsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C886E15F1959C83100ED5201 /* FirstSwift */ = {
+		C886E15F1959C83100ED5201 /* SwirlingBalls */ = {
 			isa = PBXGroup;
 			children = (
 				C886E1621959C83200ED5201 /* AppDelegate.swift */,
@@ -93,6 +93,7 @@
 				C886E1691959C83200ED5201 /* Images.xcassets */,
 				C886E1601959C83200ED5201 /* Supporting Files */,
 			);
+			name = SwirlingBalls;
 			path = FirstSwift;
 			sourceTree = "<group>";
 		};
@@ -104,12 +105,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		C886E1721959C83200ED5201 /* FirstSwiftTests */ = {
+		C886E1721959C83200ED5201 /* SwirlingBallsTests */ = {
 			isa = PBXGroup;
 			children = (
-				C886E1751959C83200ED5201 /* FirstSwiftTests.swift */,
+				C886E1751959C83200ED5201 /* SwirlingBalls.swift */,
 				C886E1731959C83200ED5201 /* Supporting Files */,
 			);
+			name = SwirlingBallsTests;
 			path = FirstSwiftTests;
 			sourceTree = "<group>";
 		};
@@ -124,9 +126,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C886E15C1959C83100ED5201 /* FirstSwift */ = {
+		C886E15C1959C83100ED5201 /* SwirlingBalls */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C886E1791959C83200ED5201 /* Build configuration list for PBXNativeTarget "FirstSwift" */;
+			buildConfigurationList = C886E1791959C83200ED5201 /* Build configuration list for PBXNativeTarget "SwirlingBalls" */;
 			buildPhases = (
 				C886E1591959C83100ED5201 /* Sources */,
 				C886E15A1959C83100ED5201 /* Frameworks */,
@@ -136,14 +138,14 @@
 			);
 			dependencies = (
 			);
-			name = FirstSwift;
+			name = SwirlingBalls;
 			productName = FirstSwift;
-			productReference = C886E15D1959C83100ED5201 /* FirstSwift.app */;
+			productReference = C886E15D1959C83100ED5201 /* SwirlingBalls.app */;
 			productType = "com.apple.product-type.application";
 		};
-		C886E16E1959C83200ED5201 /* FirstSwiftTests */ = {
+		C886E16E1959C83200ED5201 /* SwirlingBallsTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C886E17C1959C83200ED5201 /* Build configuration list for PBXNativeTarget "FirstSwiftTests" */;
+			buildConfigurationList = C886E17C1959C83200ED5201 /* Build configuration list for PBXNativeTarget "SwirlingBallsTests" */;
 			buildPhases = (
 				C886E16B1959C83200ED5201 /* Sources */,
 				C886E16C1959C83200ED5201 /* Frameworks */,
@@ -154,9 +156,9 @@
 			dependencies = (
 				C886E1711959C83200ED5201 /* PBXTargetDependency */,
 			);
-			name = FirstSwiftTests;
+			name = SwirlingBallsTests;
 			productName = FirstSwiftTests;
-			productReference = C886E16F1959C83200ED5201 /* FirstSwiftTests.xctest */;
+			productReference = C886E16F1959C83200ED5201 /* SwirlingBallsTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -177,7 +179,7 @@
 					};
 				};
 			};
-			buildConfigurationList = C886E1581959C83100ED5201 /* Build configuration list for PBXProject "FirstSwift" */;
+			buildConfigurationList = C886E1581959C83100ED5201 /* Build configuration list for PBXProject "SwirlingBalls" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -190,8 +192,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C886E15C1959C83100ED5201 /* FirstSwift */,
-				C886E16E1959C83200ED5201 /* FirstSwiftTests */,
+				C886E15C1959C83100ED5201 /* SwirlingBalls */,
+				C886E16E1959C83200ED5201 /* SwirlingBallsTests */,
 			);
 		};
 /* End PBXProject section */
@@ -233,7 +235,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C886E1761959C83200ED5201 /* FirstSwiftTests.swift in Sources */,
+				C886E1761959C83200ED5201 /* SwirlingBalls.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,7 +244,7 @@
 /* Begin PBXTargetDependency section */
 		C886E1711959C83200ED5201 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = C886E15C1959C83100ED5201 /* FirstSwift */;
+			target = C886E15C1959C83100ED5201 /* SwirlingBalls */;
 			targetProxy = C886E1701959C83200ED5201 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -346,7 +348,7 @@
 				INFOPLIST_FILE = FirstSwift/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = SwirlingBalls;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -359,7 +361,7 @@
 				INFOPLIST_FILE = FirstSwift/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = SwirlingBalls;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
@@ -379,7 +381,7 @@
 				INFOPLIST_FILE = FirstSwiftTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				METAL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = SwirlingBallsTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 			};
 			name = Debug;
@@ -395,7 +397,7 @@
 				INFOPLIST_FILE = FirstSwiftTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				METAL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = SwirlingBallsTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 			};
 			name = Release;
@@ -403,7 +405,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C886E1581959C83100ED5201 /* Build configuration list for PBXProject "FirstSwift" */ = {
+		C886E1581959C83100ED5201 /* Build configuration list for PBXProject "SwirlingBalls" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C886E1771959C83200ED5201 /* Debug */,
@@ -412,7 +414,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C886E1791959C83200ED5201 /* Build configuration list for PBXNativeTarget "FirstSwift" */ = {
+		C886E1791959C83200ED5201 /* Build configuration list for PBXNativeTarget "SwirlingBalls" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C886E17A1959C83200ED5201 /* Debug */,
@@ -421,7 +423,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C886E17C1959C83200ED5201 /* Build configuration list for PBXNativeTarget "FirstSwiftTests" */ = {
+		C886E17C1959C83200ED5201 /* Build configuration list for PBXNativeTarget "SwirlingBallsTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C886E17D1959C83200ED5201 /* Debug */,

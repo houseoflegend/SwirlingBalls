@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "C886E15C1959C83100ED5201"
-               BuildableName = "FirstSwift.app"
-               BlueprintName = "FirstSwift"
-               ReferencedContainer = "container:FirstSwift.xcodeproj">
+               BuildableName = "SwirlingBalls.app"
+               BlueprintName = "SwirlingBalls"
+               ReferencedContainer = "container:SwirlingBalls.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -44,9 +44,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C886E15C1959C83100ED5201"
-            BuildableName = "FirstSwift.app"
-            BlueprintName = "FirstSwift"
-            ReferencedContainer = "container:FirstSwift.xcodeproj">
+            BuildableName = "SwirlingBalls.app"
+            BlueprintName = "SwirlingBalls"
+            ReferencedContainer = "container:SwirlingBalls.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
