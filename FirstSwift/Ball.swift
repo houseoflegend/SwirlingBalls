@@ -36,10 +36,10 @@ class Ball {
     ////////////////////////////////////////////////////////////////////////////////
     // MARK: Instance methods
     
-    func update(tickTime: NSTimeInterval, touchPoint: CGPoint, bounds: CGRect) {
+    func update(tickTimeInterval: NSTimeInterval, touchPoint: CGPoint, bounds: CGRect) {
         // Move ball.
-        var x: Double = Double(center.x) + self.velocityX * Double(tickTime)
-        var y: Double = Double(center.y) + self.velocityY * Double(tickTime)
+        var x: Double = Double(center.x) + self.velocityX * Double(tickTimeInterval)
+        var y: Double = Double(center.y) + self.velocityY * Double(tickTimeInterval)
         center.x = CGFloat(x)
         center.y = CGFloat(y)
         
