@@ -7,8 +7,16 @@
 //  Copyright (c) 2014 House of Legend. All rights reserved.
 //
 
-// Ball count and size
-let BALL_COUNT: Double = 75 // Reduce this value if your frame rate gets choppy
+// Ball count -- Reduce this value if the frame rate gets choppy
+#if arch(i386) || arch(x86_64)
+    // Simulator
+    let BALL_COUNT: Double = 500
+#else
+    // Device
+    let BALL_COUNT: Double = 75
+#endif
+
+// Ball size range
 let MIN_BALL_RADIUS: Double = 8
 let MAX_BALL_RADIUS: Double = 20
 
